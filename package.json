@@ -59,13 +59,27 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Irina",
   "license": "ISC",
-  "description": "",
+  "description": "The project is an API for query the current weather in the capital of a country. The name of the country is the input parameter.",
   "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
     "nodemon": "^2.0.15"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrinaPich/weather-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IrinaPich/weather-api/issues"
+  },
+  "homepage": "https://github.com/IrinaPich/weather-api#readme"
 }

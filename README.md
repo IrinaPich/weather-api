@@ -11,11 +11,20 @@ For http requests from node.js and the browser used AXIOS.
 ## Install and run the project
 
 1. Install git and npm
-2. git clone  ....
-1. Enter project directory
-3. npm install 
-1. npm start
+2. git clone https://github.com/IrinaPich/weather-api.git
+3. Enter project directory
+4. npm install 
+5. npm start
 
 After this point you must see in your terminal: Server Running on port: http://localhost:5000.
 Then enter to a browser localhost:5000/{country name}. For example: http://localhost:5000/china.
 
+## Test project
+
+1. Install mocha
+2. Install chai
+3. npm test
+
+## Challenges
+
+API doesn't work (app crashed) for countiry capitals with special letters. For example the capital of Moldova is Chișinău and require additional code implementing.
