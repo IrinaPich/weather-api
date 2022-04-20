@@ -21,9 +21,8 @@ Then enter to a browser localhost:5000/{country name}. For example: http://local
 
 ## Test project
 
-1. Install mocha
-2. Install chai
-3. npm test
+1. Open a new terminal in project directory
+2. npm test
 
 ## Challenges
 
