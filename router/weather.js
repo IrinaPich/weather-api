@@ -20,9 +20,17 @@ router.get('/:countryName', (req, res) => {
     
     const cityWeather = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=ce5c5dfc1585e08f124cccb1ce5aa9c6`);
     cityWeather.then(response => {
-    const weather=response.data;
+    
+    const weather = {
+        city: capital, 
+    };
 
-    res.send(response.data);
+    weather.wind = response.data.wind;
+    weather.temp = response.data.main.temp;
+
+    console.log(response.data);
+
+    res.send(weather);
 
     })
     })
